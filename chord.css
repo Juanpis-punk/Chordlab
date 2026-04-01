@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+/* HEADER */
+.header {
+  background: #1a001f;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 18px;
+}
+
+button {
+  background: #7b2cbf;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* LAYOUT GENERAL */
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 120px;
+  background: #140017;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chord {
+  background: #9d4edd;
+  margin: 8px 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: grab;
+  font-size: 14px;
+}
+
+/* TIMELINE */
+.timeline {
+  flex: 1;
+  background: #050505;
+  border-left: 2px solid #7b2cbf;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+.track-chord {
+  background: #c77dff;
+  color: black;
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 10px;
+  min-width: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.placeholder {
+  color: #666;
+}
+
+/* 📱 MODO CELULAR */
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    border-bottom: 2px solid #7b2cbf;
+  }
+
+  .chord {
+    margin: 5px;
+    min-width: 60px;
+    flex-shrink: 0;
+  }
+
+  .timeline {
+    border-left: none;
+    border-top: 2px solid #7b2cbf;
+    height: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .track-chord {
+    margin: 5px;
+  }
+
+}

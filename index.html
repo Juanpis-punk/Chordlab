@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChordLab</title>
+  <link rel="stylesheet" href="chord.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>ChordLab</h1>
+    <button id="playBtn">▶</button>
+  </header>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="chord" draggable="true">C</div>
+      <div class="chord" draggable="true">G</div>
+      <div class="chord" draggable="true">Am</div>
+      <div class="chord" draggable="true">F</div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline" id="timeline">
+      <p class="placeholder">Arrastra acordes aquí</p>
+    </div>
+
+  </div>
+
+  <script src="chord.js"></script>
+</body>
+</html>
